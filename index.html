@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- CSS DEFINITIONS -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- Import internal css definitions -->
+    <link rel="stylesheet" type="text/css" href="css/internalstyles.css">
+
+    <!-- JAVASCRIPT DEFINITIONS -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ICONS AND FONTS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- MOBILE OPTIMIZATIONS -->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="home" class="scrollspy" style="font-family: 'Titillium Web', sans-serif;">
+    <!-- Navbar goes here -->
+    <div class="navbar-fixed">
+        <nav class="cyan lighten-3 z-depth-3" id = "nav-wrapper">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="http://www.nus.edu.sg/" class="brand-logo"><img src="images/nus_logo.png" id = "brand-logo"></a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="large material-icons blue-grey-text text-darken-3">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down" style="height: 80px;">
+                        <li class="tab col s3 m3 l3">
+                            <a href="#overview" class="blue-grey-text text-darken-3" style="font-family: 'Titillium Web', sans-serif; font-size: 20px;">Overview</a>
+                        </li>
+                        <li class="tab col s3 m3 l3">
+                            <a href="#usage" class="blue-grey-text text-darken-3" style="font-family: 'Titillium Web', sans-serif; font-size: 20px;">Usage</a>
+                        </li>
+                        <li class="tab col s3 m3 l3">
+                            <a href="#alerts" class="blue-grey-text text-darken-3" style="font-family: 'Titillium Web', sans-serif; font-size: 20px;">Alerts</a>
+                        </li>
+                        <li class="tab col s3 m3 l3">
+                            <a href="#contacts" class="blue-grey-text text-darken-3" style="font-family: 'Titillium Web', sans-serif; font-size: 20px;">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a class="sidenav-close" href="#overview">About</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#usage">Usage</a>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#alerts">Alerts</a>
+        </li>
+    </ul>
+
+    <!-- Slider  -->
+    <section class="parallax-container">
+        <div class="parallax">
+            <li>
+                <!-- Photo of Oximeter -->
+                <img src="images/oximeter.png">
+                <div>
+                    <h3 class="blue-grey-text text-darken-3" id='header' style="font-family: 'Titillium Web', sans-serif;">
+                        Personal Wireless <br> Pulse Oximetry
+                    </h3>
+                </div>
+            </li>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section scrollspy">
+
+        <div class="container">
+            <h3 class="center">
+                Overview
+            </h3>
+
+            <p class="flow-text">
+                We are a team of NUS researchers working to use existing technology and data analytical methods to respond to the Covid-19 crisis in foreign worker domitories.
+
+
+            </p>
+
+        </div>
+
+        <!-- Personal Oximeter -->
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="images/overview_oximeter.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-3">Personal Oximeter</span>
+                        <br>
+                        <p>
+                            Measures the amount of oxygen in your blood
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wireless Nodes -->
+            <div class="col s12 m12 l4">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="images/wireless_node.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-3">Wireless Nodes</span>
+                        <br>
+                        <p>
+                            Records patients' readings and uploads to cloud
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard/SMS Alert -->
+            <div class="col s12 m12 l4">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="images/sms_alert.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-3">Measurements</span>
+                        <br>
+                        <p>
+                            Receive notifications about patients' readings from the cloud
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Pulse Oximeter Usage -->
+    <section id="usage" class="section scrollspy">
+        <h3 class="center">
+            Pulse Oximeter Usage
+        </h3>
+
+        <div class="row z-depth-1">
+            <div class="col l7 m8 s12" style="padding: 0 0rem;">
+                <div class="carousel carousel-slider oximeter">
+                    <a class="carousel-item" id="#one_t"><img src="images/installation.png"></a>
+                    <a class="carousel-item" id="#two_t"><img src="images/overview_oximeter.png"></a>
+                    <a class="carousel-item" id="#three_t"><img src="images/sms_alert.png"></a>
+                    <a class="carousel-item" id="#four_t"><img src="images/dashboard.png"></a>
+                    <div class="carousel-fixed-item center" style="top: 45%;">
+                        <a id="carousel_prev_oximeter" class="waves-effect left"><i
+                                class="grey-text large material-icons">navigate_before</i></a>
+                        <a id="carousel_next_oximeter" class="waves-effect right"><i
+                                class="grey-text large material-icons">navigate_next</i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l5 m4 s12" id="one-text">
+                <!-- Installation -->
+                <div class="one_t">
+                    <h4>Installation of Wireless Node</h4>
+                    <p class="flow-text">Attach the wireless node to the wall and plug in to an outlet</p>
+
+                    <div style=" color: red;">
+                        <p class="flow-text">DO NOT TAMPER WITH NODE OR OUTLET</p>
+                    </div>
+                </div>
+
+                <!-- Pulse Oximeter -->
+                <div hidden class="two_t scroll">
+                    <h4>Clip on Pulse Oximeter</h4>
+                    <p class="flow-text">Clip on the index finger within 6m of any wireless node</p>
+                    <p class="flow-text">Stay still during measurement and wait 30 seconds for the measurements to finish
+                    </p>
+                    <p class="flow-text">The LED will turn <b><span style='color:blue;'>blue</span></b> to show that it is connected,
+                        <b><span style='color:green;'>green</span></b> to show data,
+                        <b><span style='color:red;'>red</span></b> when the reading ends</p>
+                    <p class="flow-text">Then take off the pulse oximeter</p>
+                    <div style=" color: red;">
+                        <p class="flow-text">Use your own device</p>
+                        <p class="flow-text">Up to 8 pulse oximeters can be connected at the same time</p>
+                    </div>
+                </div>
+
+                <!-- SMS Alert -->
+                <div hidden class="three_t disabled scroll">
+                    <h4>SMS Alerts</h4>
+                    <p class="flow-text" style="margin-left: 25px;">Both the dorm operators and the residents will receive SMS alerts if the measurements are abnormal</p>
+                    <font size="+1">
+                        <ol>
+                            <li>The resident is asked to retake measurement in 1 hour in preferred language</li>
+                            <br>
+                            <li>The dorm operator is alerted if the readings are abnormal again OR if patient does not retake measurement
+                            </li>
+                            <br>
+                            <li>Resident receives an "all clear" if the readings are normal</li>
+                        </ol>
+                    </font>
+                </div>
+
+                <!-- Dashboard -->
+                <div hidden class="four_t disabled scroll">
+                    <h4>Dashboard</h4>
+                    <p class="flow-text">Shows the latest measurements from each resident</p>
+                    <p class="flow-text">Access dashboard by computer, tablet or smartphone</p>
+                    <p class="flow-text">The colors show recency and normality of the measurements</p>
+
+                    <p class="flow-text"><b><span style='color:grey;'>Grey</span></b>: Measurement is not recent</p>
+                    <p class="flow-text"><b><span style='color:green;'>Green</span></b>: Measurement is recent and normal
+                    </p>
+                    <p class="flow-text"><b><span style='color:orange;'>Orange</span></b>: One of the measurements is abnormal
+                    </p>
+                    <p class="flow-text"><b><span style='color:red;'>Red</span></b>: Both measurements are abnormal</p>
+                    <p>The colors reset to <span style='color:grey;'><b>grey</b></span> at 8am, 12pm, 4pm and 8pm every day
+                    </p>
+                    <!-- <p class = "right">More details</p> -->
+                    <a class="waves-effect waves-light btn modal-trigger right" href="#more_details">More Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- More details subscreen -->
+        <div id="more_details" class="modal">
+            <div class="modal-content">
+                <h4 class="center"><u>Dashboard</u></h4>
+                <h5>How to use?</h5>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <img class="responsive-img" src="images/dashboard.png">
+                        <p class="flow-text center">Clicking on the box shows the patient’s last 3 days of measurement
+                        </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <img class="responsive-img" src="images/measurements.png">
+                        <p class="flow-text center">Click on “Show all days” to see all the measurements taken from that patient.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Alerts -->
+    <section id="alerts" class="section scrollspy">
+
+        <h3 class="center">Alerts</h3>
+
+        <div class="container">
+            <h5>For Dorm Operators</h5>
+
+            <br></br>
+
+            <div class="row">
+                <div class="col s12 m12 l4">
+                    <h6><b>9572 5567</b></h6>
+                    <p>
+                        SoilBuild Defu Dormitory<br> John Wick in Room #02-01 Bed #02 has abnormal readings (HR: 95, SpO2: 93).
+                    </p>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <h6><b>9572 5567</b></h6>
+                    <p>
+                        SoilBuild Defu Dormitory<br> The following residents have yet to submit their measurements:
+                    </p>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <h6><b>9572 5567</b></h6>
+                    <p style="text-align: justify;">
+                        SoilBuild Defu Dormitory<br> The following residents did not submit their measurements:
+                    </p>
+                </div>
+            </div>
+
+            <br></br>
+
+            <div class="large_screens">
+
+                <h5>For Residents</h5>
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h5>
+                            <center>English</center>
+                        </h5>
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please take your Pulse Oximeter measurements now.
+                        </p>
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h5>
+                            <center>Tamil</center>
+                        </h5>
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> தயவுசெய்து உங்கள் துடிப்பு ஆக்சிமீட்டர் அளவீட்டை இப்போது எடுத்துக் கொள்ளுங்கள்.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please retake your measurements in 30 mins after receiving another SMS from us.
+                        </p>
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> எங்களிடமிருந்து மற்றொரு எஸ்எம்எஸ் பெற்ற பிறகு உங்கள் அளவீட்டை 30 நிமிடங்களில் மீண்டும் பெறுங்கள்.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please retake your pulse oximeter measurement now.
+                        </p>
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> உங்கள் துடிப்பு ஆக்சிமீட்டர் அளவீட்டை இப்போது மீண்டும் எடுக்கவும்.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Your measurements (BP: 72, SpO2: 99) are normal!
+                        </p>
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> உங்கள் அளவீடுகள் (BP: 72, SpO2: 99) இயல்பானவை!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="small_screens">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>
+                            <center>English</center>
+                        </h5>
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please take your Pulse Oximeter measurements now.
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please retake your measurements in 30 mins after receiving another SMS from us
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Please retake your pulse oximeter measurement now.
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> Your measurements (BP: 72, SpO2: 99) are normal!
+                        </p>
+                    </div>
+
+                    <div class="col s12">
+                        <h5>
+                            <center>Tamil</center>
+                        </h5>
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> தயவுசெய்து உங்கள் துடிப்பு ஆக்சிமீட்டர் அளவீட்டை இப்போது எடுத்துக் கொள்ளுங்கள்.
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> எங்களிடமிருந்து மற்றொரு எஸ்எம்எஸ் பெற்ற பிறகு உங்கள் அளவீட்டை 30 நிமிடங்களில் மீண்டும் பெறுங்கள்.
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> உங்கள் துடிப்பு ஆக்சிமீட்டர் அளவீட்டை இப்போது மீண்டும் எடுக்கவும்.
+                        </p>
+
+                        <br></br>
+
+                        <h6><b>9572 5567</b></h6>
+                        <p style="text-align: justify;">
+                            SoilBuild Defu Dormitory<br> உங்கள் அளவீடுகள் (BP: 72, SpO2: 99) இயல்பானவை!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Footer  -->
+    <footer class="page-footer blue-grey lighten-5">
+        <div class="section scrollspy container" id="contacts">
+            <h3 class="blue-grey-text text-darken-3">Contacts</h3>
+            <div class="row">
+                <div class="col s4 m3 l2">
+                    <center>
+                        <a class="blue-grey-text text-darken-3" href="mailto:johnho@nus.edu.sg">
+                            <i class="material-icons">email</i>
+                            <h6 class="black-text">John Ho</h6>
+                        </a>
+                    </center>
+                </div>
+                <div class="col s4 m3 l2">
+                    <center>
+                        <a class="blue-grey-text text-darken-3" href="mailto:johnho@nus.edu.sg">
+                            <i class="material-icons">email</i>
+                            <h6 class="black-text">Shih-Cheng Yen</h6>
+                        </a>
+                    </center>
+                </div>
+                <div class="col s4 m3 l2">
+                    <center>
+                        <a class="blue-grey-text text-darken-3" href="mailto:arthurtay@nus.edu.sg">
+                            <i class="material-icons">email</i>
+                            <h6 class="black-text">Arthur Tay</h6>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright cyan lighten-3 black-text">
+            <div class="container">
+                © John Ho | National University of Singapore | Covid-19 Response
+                <a class="blue-text right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/internalscripts.js"></script>
+
+</body>
+
+</html>
